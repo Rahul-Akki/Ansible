@@ -3,16 +3,16 @@
 192.187.56.3
 
 [catlogue]
-192.187.56.3
+192.187.56.1
 192.187.56.3
 
 [cart]
-192.187.56.3
+192.187.56.4
 192.187.56.3
 
 [roboshop:children]
 web
-cartcatlogue
+cart
 catlogue
 
 
