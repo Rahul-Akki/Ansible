@@ -5,4 +5,4 @@
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, {{WISHES}}"
 
-# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 -e "PERSON=Shivakumar" -e "WISHES=Good Morning" 09-vars-from-args.yaml
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 -e "PERSON=Shivakumar" -e "WISHES=Good_Morning" 09-vars-from-args.yaml
