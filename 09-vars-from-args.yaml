@@ -3,4 +3,6 @@
   tasks:
   - name: check variables
     ansible.builtin.debug:
-      msg: "Hello {{PERSON}}, Good {{WISHES}}"
+      msg: "Hello {{PERSON}}, {{WISHES}}"
+
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 -e "PERSON=Shivakumar" -e "WISHES=Good Morning" 09-vars-from-args.yaml

@@ -11,3 +11,5 @@
   - name: PLAY-2 and TSAK-2
     ansible.builtin.debug:
       msg: "Hello from PLAY-2 and TASK-2"
+
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 03-variables.yaml

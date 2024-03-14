@@ -10,3 +10,5 @@
     ansible.builtin.service:
       name: nginx
       state: started
+
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 02-nginx.yaml

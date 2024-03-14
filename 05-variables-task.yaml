@@ -10,3 +10,5 @@
       Course: "DevOps with AWS"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 05-variables-task.yaml

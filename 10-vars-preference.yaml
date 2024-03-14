@@ -1,0 +1,25 @@
+- name: variables from PLAY level
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+ vars_prompt:
+    - name: PERSON
+      prompt: please enter your NAME
+      private: false # user can see what they are entering
+    - name: WISHES
+      prompt: please enter your WISHES
+      private: false 
+  vars:
+    PERSON: "Siva from PLAY"
+    WISHES: "Morning from PLAY"
+  tasks:
+  - name: check variables
+    vars:
+      PERSON: "Siva from TASK"
+      WISHES: "Morning from TASK"
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON}}, {{WISHES}}"
+
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 -e "PERSON=Shivakumar" -e "WISHES=Good Morning" 09-vars-from-args.yaml
+# args from command line will be 1st preference
+
