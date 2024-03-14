@@ -1,0 +1,13 @@
+- name: PLAY-1 #platbook is list of plays
+  host: localhost
+  task:
+  - name: PLAY-1 and TSAK-1
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-1 and TASK-1"
+
+- name: PLAY-2 
+  host: localhost
+  task:
+  - name: PLAY-2 and TSAK-2
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-2 and TASK-2"
