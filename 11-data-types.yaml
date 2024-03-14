@@ -29,3 +29,5 @@
     ansible.builtin.debug:
       msg: "This is Trainer: {{Trainer}}"
 
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 11-data-types.yaml
+
