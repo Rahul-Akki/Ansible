@@ -26,4 +26,11 @@
 # ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10-vars-preference.yaml
 # 3. Files
 # ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10-vars-preference.yaml
-#4. 
+# 4. Prompt
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10-vars-preference.yaml
+# 5. play
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10-vars-preference.yaml
+# 6. inventory
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10-vars-preference.yaml
+# 7. roles
+
