@@ -14,11 +14,16 @@
     WISHES: "Morning from PLAY"
   tasks:
   - name: check variables
-    vars:
-      PERSON: "Siva from TASK"
-      WISHES: "Morning from TASK"
+    # vars:
+    #   PERSON: "Siva from TASK"
+    #   WISHES: "Morning from TASK"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, {{WISHES}}"
 
-# args from command line will be 1st preference
+# 1. CMD - args from command line will be 1st preference
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 -e "PERSON=Shivakumar" -e "WISHES=GoodMorning" 10-vars-preference.yaml
+# 2. Task
+# ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10-vars-preference.yaml
+# 3. 
+
 
