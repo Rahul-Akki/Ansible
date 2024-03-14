@@ -3,9 +3,15 @@
   tasks: 
   - name: check roboshop user exists or not
     ansible.builtin.command: id roboshop
-    register: USER #user is a variable name
+    register: user #user is a variable name
     ignore_errors: true #ansible will not exit even if got error
   
   - name: print variable value
     ansible.builtin.debug:
-      msg: "User output is: {{USER}}"
+      msg: "User output is: {{user}}"
+
+  - name: print exit status or return code
+    ansible.builtin.debug:
+      msg: "status is: {{user.rc}}"
+
+      
