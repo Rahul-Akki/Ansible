@@ -1,6 +1,6 @@
 - name: checking data types
   hosts: localhost
-  var:
+  vars:
     NAME: Shivakumar #Key Value
     Skills: #Skills is a list type
     - DevOps
